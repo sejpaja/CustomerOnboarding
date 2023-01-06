@@ -1,0 +1,16 @@
+<div class="content" *ngIf="show">
+    <form class="example-form">
+        <mat-card>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>First Name</mat-label>
+                <input matInput placeholder="Enter your name" name="firstName" [(ngModel)]="firstName">
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Last Name</mat-label>
+                <input matInput placeholder="Enter your password" value="" name="lastName" type="lastName"
+                    [(ngModel)]="lastName">
+            </mat-form-field>
+            <button mat-raised-button color="warn" (click)="submit()">Submit</button>
+        </mat-card>
+    </form>
+</div>

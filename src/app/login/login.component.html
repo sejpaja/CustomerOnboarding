@@ -1,0 +1,21 @@
+<div class="example-container">
+  <img mat-card-image
+    src="https://media.licdn.com/dms/image/C4D0BAQEzqnAdsML8AQ/company-logo_200_200/0/1656661705726?e=2147483647&v=beta&t=fCsOh_neW3mzBJNaEheQp3RX1Bo1tOEb54EW7FLmbVw"
+    alt="Incedo Logo">
+  <form class="example-form">
+    <mat-card>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>User Name</mat-label>
+        <input matInput placeholder="Enter your name" name="usename" [(ngModel)]="username">
+      </mat-form-field>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Password</mat-label>
+        <input matInput placeholder="Enter your password" value="" name="password" type="password"
+          [(ngModel)]="password">
+      </mat-form-field>
+      <button mat-raised-button color="warn" (click)="submit()">Submit</button>
+      <button mat-button color="warn" (click)="signuo()">SignUp</button>
+      <button mat-button color="warn" (click)="forgotPassword()">Forgot Password</button>
+    </mat-card>
+  </form>
+</div>

@@ -1,0 +1,16 @@
+.example-container mat-form-field+mat-form-field {
+  text-align: center;
+}
+
+input.example-right-align::-webkit-outer-spin-button,
+input.example-right-align::-webkit-inner-spin-button {
+  display: none;
+}
+
+input.example-right-align {
+  -moz-appearance: textfield;
+}
+
+.example-form {
+  text-align: center;
+}
