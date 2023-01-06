@@ -3,19 +3,25 @@
     src="https://media.licdn.com/dms/image/C4D0BAQEzqnAdsML8AQ/company-logo_200_200/0/1656661705726?e=2147483647&v=beta&t=fCsOh_neW3mzBJNaEheQp3RX1Bo1tOEb54EW7FLmbVw"
     alt="Incedo Logo">
   <form class="example-form">
-    <mat-card>
+    <mat-grid-list cols="1">
       <mat-form-field class="example-full-width" appearance="fill">
         <mat-label>User Name</mat-label>
         <input matInput placeholder="Enter your name" name="usename" [(ngModel)]="username">
       </mat-form-field>
+    </mat-grid-list>
+    <mat-grid-list cols="1">
       <mat-form-field class="example-full-width" appearance="fill">
         <mat-label>Password</mat-label>
         <input matInput placeholder="Enter your password" value="" name="password" type="password"
           [(ngModel)]="password">
       </mat-form-field>
-      <button mat-raised-button color="warn" (click)="submit()">Submit</button>
-      <button mat-button color="warn" (click)="signuo()">SignUp</button>
-      <button mat-button color="warn" (click)="forgotPassword()">Forgot Password</button>
-    </mat-card>
+    </mat-grid-list> 
+    <mat-grid-list cols="1">
+      <button mat-raised-button color="warn"  class="logIn" (click)="submit()">Log In</button>
+    </mat-grid-list>
+    <mat-grid-list cols="2">
+      <button mat-button color="warn" class="signUp" (click)="signup()">SignUp</button>
+      <button mat-button color="warn" (click)="forgotPassword()">Forgot Password?</button>
+    </mat-grid-list>  
   </form>
 </div>

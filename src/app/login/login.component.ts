@@ -14,14 +14,12 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
   username: string = "";
   password: string = "";
-  show: boolean = true;
 
   constructor(private http: HttpClient, private router: Router) {
-    this.show = true;
+    
   }
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
   }
 
 
@@ -34,18 +32,16 @@ export class LoginComponent implements OnInit {
     //   })
     console.log("Response is " + response)
     this.clear();
-    this.router.navigateByUrl('/homepage-componenet');
+    this.router.navigateByUrl('/home');
   }
 
   clear() {
     this.username = "";
     this.password = "";
-    this.show = false;
   }
 
-  signuo() {
-    this.router.navigateByUrl('/signup-component');
-    this.show = false;
+  signup() {
+    this.router.navigateByUrl('/signup');
   }
 
   forgotPassword() {

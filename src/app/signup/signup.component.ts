@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signup',
@@ -8,15 +9,23 @@ import { Component } from '@angular/core';
 export class SignupComponent {
   firstName: string = "";
   lastName: string = "";
-  show: boolean = true;
+  userName: string = "";
+  password: string = "";
+
+  constructor(private router: Router){
+
+  }
 
   submit() {
     console.log("")
     this.clear();
+    this.router.navigateByUrl('/')
   }
 
   clear() {
     this.firstName = "";
     this.lastName = "";
+    this.userName = "";
+    this.password = "";
   }
 }
